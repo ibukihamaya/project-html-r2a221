@@ -1,0 +1,30 @@
+<!-- 作成日/8/28 -->
+<!-- 作成者 濱屋伊吹-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>animationを使ったアニメーション</title>
+    <style type="text/css">
+      /*共通設定*/
+      div{
+        width:100px;
+        height: 100px;
+        padding: 1em;
+        margin:2em 2em 4em;
+        background: #ad4444;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      /*ジグザグに動くアニメーション*/
+      .smple{animation:zigzag 2s ease 0s 3 normal}
+      /*zigzagのキーフレームを設定*/
+      @keyfremes zigzag{
+        0%{transform: translateY(0);}
+        50%{transform: translateY(50px,50px);}
+        100%{transform: translateY(100px,0px);}
+      }
+
+      /*大きさと色が変わるアニメーション*/
+      .smple2{animation:scale-and}
